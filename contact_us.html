@@ -1,0 +1,199 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <!--Important Links-->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
+    crossorigin="anonymous">
+    <!-- Title ICON -->
+    
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/MD/Images/mwlogo.jpeg" rel="icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="script" href="js/contact_us.js">
+  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/contact_us.css" />
+    <script src="js/contact_us.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="text/javascript">
+      
+  
+  </script>
+  </head>
+
+  <body>
+    <main>
+      <nav class="container-fluid navbar navbar-expand-lg shadow-5-strong">
+          <a class="navbar-brand text-warning font-weight-bold" href="#">V Shop</a>
+          <button class="navbar-toggler text-white "  type="button" data-toggle="collapse" data-target="#main_nav">
+            <span class="fa fa-bars text-dark"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main_nav">
+              <ul class="navbar-nav mx-auto">
+                  <li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">SHOP</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">PICNIC</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">PAGE</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">PROMOTION</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact_us.html">CONTACT US</a></li>
+              </ul>            
+              <a class="navbar-brand font-weight-bold" href="#"><i class="fa fa-search" style="color: black;"></i></a>
+              <a class="navbar-brand font-weight-bold" href="#"><i class="fa fa-shopping-cart" style="color: black;"></i></a>
+              <a class="navbar-brand font-weight-bold" href="#"><i class="fa fa-bars" style="color: black;"></i></a>
+          </div> <!-- navbar-collapse.// -->
+      </nav>
+
+      <header>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active img-fluid responsive" style="background-image: url('images/b1.jpg')">
+                  <div class="container text-left headerset">
+                      <h1><br>The World<br>of Extreme Sports</h1>
+                      <h5>SAVE 20% ON ALL APPAREL</h5>
+                      <p><hr style="width: 170px; color: black;"><hr style="width: 120px; color: black;"></p>
+                      <button class="btn bg-dark text-white btn-lg">SHOP NOW &rarr;</button>
+                  </div>
+              </div>
+              <div class="carousel-item" style="background-image: url('images/b2.jpg!d')">
+                <div class="container text-left  headerset">
+                  <h1><br>The World<br>of Extreme Sports</h1>
+                      <h5>SAVE 20% ON ALL APPAREL</h5>
+                      <p><hr style="width: 170px; color: black;"><hr style="width: 120px; color: black;"></p>
+                      <button class="btn bg-dark text-white btn-lg">SHOP NOW &rarr;</button>
+                </div>
+              </div>
+              <div class="carousel-item" style="background-image: url('images/sl2.jpg')">
+                  <div class="container text-left headerset">
+                      <h1><br>The World<br>of Extreme Sports</h1>
+                      <h5>SAVE 20% ON ALL APPAREL</h5>
+                      <p><hr style="width: 170px; color: black;"><hr style="width: 120px; color: black;"></p>
+                      <button class="btn bg-dark text-white btn-lg">SHOP NOW &rarr;</button>
+                  </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="false"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </header>
+   
+        <form>
+          <center><h1 >Contact US</h1></center>
+    
+          <div class="form-group">
+            <label for="contact-name">Name</label>
+            <input type="text" class="form-control" id="contact-name" name="name"       placeholder="Enter your name.." onkeyup='validateName()'>
+            <span class='error-message' id='name-error'></span>
+        </div>
+    
+        <div class="form-group">
+            <label for="contact-phone">Phone Number</label>
+            <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Ex: 1231231234" onkeyup='validatePhone()'>
+            <span class='error-message' id='phone-error'></span>
+        </div>
+    
+        <div class="form-group">
+            <label for="contact-email">Email address</label>
+            <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email" onkeyup='validateEmail()'>
+            <span class='error-message' id='email-error'></span>
+        </div>   
+    
+        <div class="form-group">
+            <label for='contactMessage'>Your Message</label>
+            <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Enter a brief message" onkeyup='validateMessage()'></textarea>
+            <span class='error-message' id='message-error'></span>
+        </div>
+    
+        <button onclick='return validateForm()' class="btn btn-default">Submit</button>
+        <span class='error-message' id='submit-error'></span>
+    </form>
+    <div class="my-5">
+    
+     
+          
+              
+          
+      <!-- Footer -->
+      <footer class="text-center text-white" >
+        <!-- Grid container -->
+        <div class="container-fluid bg-dark">
+          <!-- Section: Links -->
+          <section class="mt-5">
+            <!-- Grid row-->
+            <div class="row text-center social">
+              <div class="col bg-info">Facebook</div>
+              <div class="col bg-warning">Twitter</div>
+              <div class="col bg-success">Instagram</div>
+              <div class="col bg-warning">Dribble</div>
+              <div class="col bg-danger">Pinterest</div>
+          </div>
+          <br>
+            <h1 class="text-warning bg-dark">VC Shop</h1>
+            <!-- Grid row-->
+          </section><br>
+          <!-- Section: Links -->
+    
+          
+    
+          <!-- Section: Text -->
+          <section class="mb-5">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-8">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  distinctio earum repellat quaerat voluptatibus placeat nam,
+                  commodi optio pariatur est quia magnam eum harum corrupti
+                  dicta, aliquam sequi voluptate quas.
+                </p>
+                <div class="dot">
+                  <P><span class="dot_1"></span><span class="dot_2"></span><span class="dot_3"></span></P>
+              </div>
+              </div>
+            </div>
+          </section>
+          
+         
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: white; color: black; height: 10px;"
+        >Copyright © 2021  All Right Reserved by Neosoft.com<a class="text-white" href="#">NeoSoft.com</a>
+        </div>
+        <!-- Copyright -->
+    
+        
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+         
+          
+  
+  
+  
+    </main>
+</body>
+</html>

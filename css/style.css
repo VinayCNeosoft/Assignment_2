@@ -1,0 +1,556 @@
+*{
+    margin: 0px;
+}
+.nav_css{
+    height: 70px;
+    font-style: italic;
+}
+.nav-link{
+    color: black;
+    font-size: 20px;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 700px;
+    background: no-repeat center center scroll;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.carousel-control-prev{
+    background-color: skyblue;
+    height: 50px;
+    width: 50px;
+    margin-top: 25%;
+    margin-left: -10px;
+    box-sizing: border-box;
+}
+
+.carousel-control-next{
+    background-color: rgb(0, 162, 255);
+    height: 50px;
+    width: 50px;
+    margin-top: 25%;
+    margin-left: -10px;
+    box-sizing: border-box;    
+}
+@media(max-width: 950px)
+{
+    .carousel-item
+    {
+        background-position: center;
+    }
+    .carousel-control-prev
+    { 
+        margin-top: 50%;
+        left: calc(3% - 1em);
+    }
+    .carousel-control-next
+    { 
+        margin-top: 50%;
+        left: calc(93% + 1em); 
+    }
+    
+}
+.headerset{
+    padding-top: 250px;
+    padding-left: 2%;
+    box-sizing: border-box;
+    font-style: oblique;
+    font-weight: bold;
+}
+.headerset h5{
+    font-size: 42x;
+    font-style: italic;
+}
+.ourservices{
+    align-items: center;
+    padding:50px 0 50px;
+    height: 150px;
+    
+}
+@media(max-width: 950px)
+{
+    button{
+        display: block;
+        size: 20px;
+    }
+}
+.portfolio{
+    padding:50px 0 50px;
+
+    
+}
+.rowsetting{
+    margin: 10px 0px !important;
+}
+.row{
+    display: flex;
+}
+.card{
+    height: auto;
+    width: auto;
+    
+    align-items: center;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+.breadcrumb-wrap {
+    list-style: none;
+    
+    padding: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 60px;
+}
+
+.breadcrumb {
+    background: #fff;
+    color:black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    line-height: 2em;
+    margin: 0 8px 0 0;
+    padding: 0px 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+.breadcrumb-wrap li{
+    text-decoration: black;
+    display: inline;
+}
+.breadcrumb.active {
+    text-decoration: none;
+    color: blue  ;
+    position: relative;
+}
+ul.breadcrumb-wrap li+li:before {
+    padding: 0px;
+    color: black;
+    margin-right: 50px;
+    font-weight: bold;
+    content: "-";
+  }
+.breadcrumb.active:after {
+    content:"-";
+    z-index: 1;
+}
+@media all and(max-width:600px){
+    .breadcrumb-wrap{
+         font-size: 10px;
+         height: 300px;
+    }
+    .breadcrumb li a{
+         padding:10px 0 10px 30px;
+    }
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 51%;
+    padding: 30px;
+    background-color: whitesmoke;
+
+}
+.column_2{
+    float: right;
+    width: 51%;
+    margin-top: 30px;
+    padding: 30px;
+
+
+}
+
+
+.dot{
+    margin-left: 30px;
+}
+.dot_1 {
+    height: 5px;
+    width: 5px;
+    background-color:blue;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.dot_2 {
+    height: 5px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_3 {
+    height: 5px;
+    width: 5px;
+    margin-right: 5px;
+    background-color:yellow;
+    border-radius: 50%;
+    display: inline-block;
+}
+.checked {
+    color: orange;
+  }
+  .pd{
+      height: 50%;
+      border: yellow solid 2px;;
+  }
+
+
+  .p_col1 {
+    height: 15px;
+    width: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color:red;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .p_col2 {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    background-color:skyblue;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .p_col3 {
+    height: 15px;
+    width: 15px;
+    background-color:purple;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+
+  .size_btn{
+      text-align: center;
+      display: inline;
+      margin-left: 10px;
+      margin-right: 10px;
+      background-color: silver;
+      height: 30px;
+      width: 40px;
+  }
+
+
+  #countdown-container {
+    height: 90px;
+
+    display: inline-block; /*displays divs on a line*/
+    width: 300px; /*gives the div element a width of 300px*/
+    margin: 20px ; /*gives 20px space at the top and bottom of the div element*/
+    border-radius: 5px; /*curves the edges of the div element by 5px;*/
+    background: white; /*gives the div element a background color*/
+    padding: 10px 10px 10px 10px;
+    
+}
+#countdown {
+    
+    display: inline;
+    height: 60px;
+    width: 40px;
+    font-family: "Fira Sans", sans-serif; /*changes the text font in the divelement */
+    /*displays divs on a line*/
+    /*creates 30px space between the content of the div element and the walls of the div element*/
+    background: white;
+    color: white; /*changes the text color in the div element*/
+}
+
+#countdown span {
+    color: black;
+    height: 40px;
+    width: 60px;
+    align-items: center;
+    font-weight: bold; /*boldens text in the span element*/
+    font-size: 50px; /*changes the text size in the span element*/
+    background-color: dodgerblue;
+}
+
+.insta{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+}
+.product-filter {
+    display: flex;
+  }
+  .product-filter h1 {
+    flex-grow: 1;
+  }
+  .sort {
+    display: flex;
+  }
+  .collection-sort {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+  
+    display: flex; /* so child elements can use flexbox stuff too! */
+  }
+  .product-card {
+    flex: 1 16%;
+  }
+  .product-image img {
+    max-width: 100%;
+  }
+  .product-info {
+    margin-top: auto;
+  }
+  
+  @media (max-width: 920px) {
+    .product-card {
+      flex: 1 21%;
+    }
+  }
+  @media (max-width: 600px) {
+    .product-card {
+      flex: 1 46%;
+    }
+  }
+  @media (max-width: 480px) {
+    .product-filter {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 480px) {
+    .product-filter {
+      flex-direction: column;
+    }
+    .sort {
+      align-self: flex-start;
+    }
+  }
+  .testim{
+
+    width: 100%;
+    position: absolute;
+    background-image: url(/e_comm/images/sl3.jpg);
+
+}
+.testim .wrap{
+    position: relative;
+    width: 100%;
+    max-width: 1020px;
+    padding: 40px 20px;
+    margin: auto;
+}
+.testim .arrow{
+    display: block;
+    position: absolute;
+    color: #eee;
+    cursor: pointer;
+    font-size: 2em;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .3s ease-in-out;
+    padding: 5px;
+    z-index: 22222222;
+}
+.testim .arrow:before{
+    cursor: pointer;
+}
+.testim .arrow.left{
+    left: 10px;
+}
+.testim .arrow.right{
+    right: 10px;
+}
+.testim .arrow:hover{
+    color: #ea830e;
+}
+.testim .dots{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 60px;
+    left: 0;
+    display: block;
+    z-index: 3333;
+    height: 12px;
+}
+.testim .dots .dot{
+    list-style-type: none;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    position: relative;
+}
+.testim .dots .dot.active,
+.testim .dots .dot:hover{
+background: #ea830e;
+border-color: #ea830e;
+}
+ 
+.testim .dots .dot.active{
+    animation: testim-scale .5s ease-in-out forwards;
+}
+.testim .cont{
+    position: relative;
+    overflow: hidden;
+}
+.testim .cont > div{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 0 70px 0;
+    opacity: 0;
+}
+.testim .cont > div.inactive{
+    opacity: 1;
+}
+.testim .cont > div.active{
+     
+    position: relative;
+    opacity: 1;
+     
+}
+.testim .cont div .img img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+}
+.testim .cont div h2{
+    color: #ea830e;
+    font-size: 1em;
+    margin: 15px 0;
+}
+.testim .cont div p{
+    font-size: 1.15em;
+    color: #eee;
+    width: 80%;
+    margin: auto;
+}
+ 
+.testim .cont div.active .img img{
+    animation: testim-show .5s ease-in-out forwards;
+}
+.testim .cont div.active h2{
+    animation: testim-content-in .4s ease-in-out forwards;
+}
+.testim .cont div.active p {
+    animation: testim-content-in .5s ease-in-out forwards;
+}
+.testim .cont div.inactive .img img{
+    animation: testim-hide .5s ease-in-out forwards;
+}
+.testim .cont div.inactive h2{
+    animation: testim-content-out .4s ease-in-out forwards;
+}
+.testim .cont div.inactive p {
+    animation: testim-content-out .5s ease-in-out forwards;
+}
+ 
+@keyframes testim-scale {
+    0% {
+        box-shadow: 0px 0px 0px 0px #eee;
+    }
+    35% {
+        box-shadow: 0px 0px 10px 5px #eee;
+    }
+    70% {
+        box-shadow: 0px 0px 10px 5px #ea830e;
+    }
+    100% {
+        box-shadow: 0px 0px 0px 0px #ea830e;
+    }
+}
+ 
+@keyframes testim-content-in {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes testim-content-out {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+@keyframes testim-show {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes testim-hide {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+/* coding with nick */
+ 
+/* Responsive */
+ 
+@media all and (max-width: 300px) {
+    body {
+        font-size: 14px;
+    }
+}
+@media all and (max-width: 500px) {
+    .testim .arrow{
+        font-size: 1.5rem;
+    }
+    .testim .cont div p{
+        line-height: 25px;
+    }
+}
+
+
+
+
+    
